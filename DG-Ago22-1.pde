@@ -11,7 +11,7 @@ class f{
     ran = ran_;
     for(int i = 0; i<n_; i++){
       amp[i] = random(ampm_,ampM_);
-      pos[i] = ceil((ran/n_)*(i+1));
+      pos[i] = ceil((ran/(n_-1))*i);
     }
   }
   
@@ -27,10 +27,10 @@ class f{
     }
     
 
-    int anterior = r==0 ? 0:pos[r-1];
-    float ampant = r==0 ? 0:amp[r-1];
+    int anterior = r==0? 0: pos[r-1];
+    float ampant = r==0? 0:amp[r-1];
     int distancia = v_ - anterior;
-    float ip =1- distancia*1f/(ran/n);
+    float ip =1- distancia*1f/(ran/(n-1));
     float val = lerp(amp[r],ampant,ip);
     return val;
   }
@@ -42,7 +42,7 @@ f r;
 
 void setup(){
   size(400,400);
-  r = new f(4,0,255,400);
+  r = new f(5,0,255,400);
   noStroke();
   for(int i = 0; i<400; i++){
     fill(0);
