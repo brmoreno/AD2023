@@ -7,4 +7,4 @@ Etapa 2
 Presenta avances sustanciales de tu proyecto en forma de código y procedimiento. Se presenta el Viernes 8 de Septiembre de 2023. 
 
 Etapa 3
-Presenta el software que utilizaste, el proceso de desarrollo y una galería con tus resultados finales. Se presenta el Martes 12 de Septiembre de 2023
+Presenta el software que utilizaste, el proceso de desarrollo y una galería con tus resultados finales. Se presenta el Martes 12 de Septiembre de 2023 
